@@ -1,0 +1,331 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20222.24.0423.1454                               -->
+<datasource formatted-name='federated.0hvxkny12vyawq1abqfqt175z9iu' inline='true' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+  </document-format-change-manifest>
+  <connection class='federated'>
+    <named-connections>
+      <named-connection caption='TEXT DB' name='textscan.0ey2ryy0om8iuh1e9sya81azj2o7'>
+        <connection class='textscan' cleaning='yes' compat='no' csvFile='D:/TestFiles/Tableau Files/Tableau Files Created by Sagar/DB Files/New folder/TEXT DB.txt' dataRefreshTime='' directory='D:/FileShare/Tableau Files/Tableau Files Created by Sagar/DB Files/New folder' filename='TEXT DB.txt' interpretationMode='8' password='' server='' validate='no' />
+      </named-connection>
+    </named-connections>
+    <_.fcp.ObjectModelEncapsulateLegacy.false...relation join='inner' type='join'>
+      <clause type='join'>
+        <expression op='='>
+          <expression op='[TEXT DB.txt].[DateOfBirth]' />
+          <expression op='[TEXT DB.txt1].[DateOfBirth]' />
+        </expression>
+      </clause>
+      <relation connection='textscan.0ey2ryy0om8iuh1e9sya81azj2o7' name='TEXT DB.txt' table='[D:\TestFiles\Tableau Files\Tableau Files Created by Sagar\DB Files\New folder\TEXT DB#txt]' type='table'>
+        <columns character-set='UTF-8' gridOrigin='A1:F7:no:A1:F7:1' header='yes' locale='en_US' separator=','>
+          <column datatype='integer' name='StudentID' ordinal='0' />
+          <column datatype='string' name='FirstName' ordinal='1' />
+          <column datatype='string' name='LastName' ordinal='2' />
+          <column datatype='integer' name='DateOfBirth' ordinal='3' />
+          <column datatype='string' name='Gender' ordinal='4' />
+          <column datatype='integer' name='Total Marks' ordinal='5' />
+        </columns>
+      </relation>
+      <relation connection='textscan.0ey2ryy0om8iuh1e9sya81azj2o7' name='TEXT DB.txt1' table='[TEXT DB#txt]' type='table'>
+        <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+          <column datatype='integer' name='StudentID' ordinal='0' />
+          <column datatype='string' name='FirstName' ordinal='1' />
+          <column datatype='string' name='LastName' ordinal='2' />
+          <column datatype='integer' name='DateOfBirth' ordinal='3' />
+          <column datatype='string' name='Gender' ordinal='4' />
+          <column datatype='integer' name='Total Marks' ordinal='5' />
+        </columns>
+      </relation>
+    </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+    <_.fcp.ObjectModelEncapsulateLegacy.true...relation join='inner' type='join'>
+      <clause type='join'>
+        <expression op='='>
+          <expression op='[TEXT DB.txt].[DateOfBirth]' />
+          <expression op='[TEXT DB.txt1].[DateOfBirth]' />
+        </expression>
+      </clause>
+      <relation connection='textscan.0ey2ryy0om8iuh1e9sya81azj2o7' name='TEXT DB.txt' table='[D:\TestFiles\Tableau Files\Tableau Files Created by Sagar\DB Files\New folder\TEXT DB#txt]' type='table'>
+        <columns character-set='UTF-8' gridOrigin='A1:F7:no:A1:F7:1' header='yes' locale='en_US' separator=','>
+          <column datatype='integer' name='StudentID' ordinal='0' />
+          <column datatype='string' name='FirstName' ordinal='1' />
+          <column datatype='string' name='LastName' ordinal='2' />
+          <column datatype='integer' name='DateOfBirth' ordinal='3' />
+          <column datatype='string' name='Gender' ordinal='4' />
+          <column datatype='integer' name='Total Marks' ordinal='5' />
+        </columns>
+      </relation>
+      <relation connection='textscan.0ey2ryy0om8iuh1e9sya81azj2o7' name='TEXT DB.txt1' table='[TEXT DB#txt]' type='table'>
+        <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+          <column datatype='integer' name='StudentID' ordinal='0' />
+          <column datatype='string' name='FirstName' ordinal='1' />
+          <column datatype='string' name='LastName' ordinal='2' />
+          <column datatype='integer' name='DateOfBirth' ordinal='3' />
+          <column datatype='string' name='Gender' ordinal='4' />
+          <column datatype='integer' name='Total Marks' ordinal='5' />
+        </columns>
+      </relation>
+    </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+    <cols>
+      <map key='[DateOfBirth (TEXT DB.txt1)]' value='[TEXT DB.txt1].[DateOfBirth]' />
+      <map key='[DateOfBirth]' value='[TEXT DB.txt].[DateOfBirth]' />
+      <map key='[FirstName (TEXT DB.txt1)]' value='[TEXT DB.txt1].[FirstName]' />
+      <map key='[FirstName]' value='[TEXT DB.txt].[FirstName]' />
+      <map key='[Gender (TEXT DB.txt1)]' value='[TEXT DB.txt1].[Gender]' />
+      <map key='[Gender]' value='[TEXT DB.txt].[Gender]' />
+      <map key='[LastName (TEXT DB.txt1)]' value='[TEXT DB.txt1].[LastName]' />
+      <map key='[LastName]' value='[TEXT DB.txt].[LastName]' />
+      <map key='[StudentID (TEXT DB.txt1)]' value='[TEXT DB.txt1].[StudentID]' />
+      <map key='[StudentID]' value='[TEXT DB.txt].[StudentID]' />
+      <map key='[Total Marks (TEXT DB.txt1)]' value='[TEXT DB.txt1].[Total Marks]' />
+      <map key='[Total Marks]' value='[TEXT DB.txt].[Total Marks]' />
+    </cols>
+    <metadata-records>
+      <metadata-record class='capability'>
+        <remote-name />
+        <remote-type>0</remote-type>
+        <parent-name>[TEXT DB.txt]</parent-name>
+        <remote-alias />
+        <aggregation>Count</aggregation>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+          <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+          <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+          <attribute datatype='string' name='gridOrigin'>&quot;A1:F7:no:A1:F7:1&quot;</attribute>
+          <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+          <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+          <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='capability'>
+        <remote-name />
+        <remote-type>0</remote-type>
+        <parent-name>[TEXT DB.txt1]</parent-name>
+        <remote-alias />
+        <aggregation>Count</aggregation>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+          <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+          <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+          <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+          <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+          <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>StudentID</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[StudentID]</local-name>
+        <parent-name>[TEXT DB.txt]</parent-name>
+        <remote-alias>StudentID</remote-alias>
+        <ordinal>0</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TEXT DB.txt_DB08494E8BE24A3D9CF3E048477CC95A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>FirstName</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[FirstName]</local-name>
+        <parent-name>[TEXT DB.txt]</parent-name>
+        <remote-alias>FirstName</remote-alias>
+        <ordinal>1</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TEXT DB.txt_DB08494E8BE24A3D9CF3E048477CC95A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>LastName</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[LastName]</local-name>
+        <parent-name>[TEXT DB.txt]</parent-name>
+        <remote-alias>LastName</remote-alias>
+        <ordinal>2</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TEXT DB.txt_DB08494E8BE24A3D9CF3E048477CC95A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>DateOfBirth</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[DateOfBirth]</local-name>
+        <parent-name>[TEXT DB.txt]</parent-name>
+        <remote-alias>DateOfBirth</remote-alias>
+        <ordinal>3</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TEXT DB.txt_DB08494E8BE24A3D9CF3E048477CC95A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Gender</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[Gender]</local-name>
+        <parent-name>[TEXT DB.txt]</parent-name>
+        <remote-alias>Gender</remote-alias>
+        <ordinal>4</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TEXT DB.txt_DB08494E8BE24A3D9CF3E048477CC95A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Total Marks</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[Total Marks]</local-name>
+        <parent-name>[TEXT DB.txt]</parent-name>
+        <remote-alias>Total Marks</remote-alias>
+        <ordinal>5</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TEXT DB.txt_DB08494E8BE24A3D9CF3E048477CC95A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>StudentID</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[StudentID (TEXT DB.txt1)]</local-name>
+        <parent-name>[TEXT DB.txt1]</parent-name>
+        <remote-alias>StudentID</remote-alias>
+        <ordinal>6</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TEXT DB.txt_DB08494E8BE24A3D9CF3E048477CC95A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>FirstName</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[FirstName (TEXT DB.txt1)]</local-name>
+        <parent-name>[TEXT DB.txt1]</parent-name>
+        <remote-alias>FirstName</remote-alias>
+        <ordinal>7</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TEXT DB.txt_DB08494E8BE24A3D9CF3E048477CC95A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>LastName</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[LastName (TEXT DB.txt1)]</local-name>
+        <parent-name>[TEXT DB.txt1]</parent-name>
+        <remote-alias>LastName</remote-alias>
+        <ordinal>8</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TEXT DB.txt_DB08494E8BE24A3D9CF3E048477CC95A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>DateOfBirth</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[DateOfBirth (TEXT DB.txt1)]</local-name>
+        <parent-name>[TEXT DB.txt1]</parent-name>
+        <remote-alias>DateOfBirth</remote-alias>
+        <ordinal>9</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TEXT DB.txt_DB08494E8BE24A3D9CF3E048477CC95A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Gender</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[Gender (TEXT DB.txt1)]</local-name>
+        <parent-name>[TEXT DB.txt1]</parent-name>
+        <remote-alias>Gender</remote-alias>
+        <ordinal>10</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RUS' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TEXT DB.txt_DB08494E8BE24A3D9CF3E048477CC95A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Total Marks</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[Total Marks (TEXT DB.txt1)]</local-name>
+        <parent-name>[TEXT DB.txt1]</parent-name>
+        <remote-alias>Total Marks</remote-alias>
+        <ordinal>11</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[TEXT DB.txt_DB08494E8BE24A3D9CF3E048477CC95A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+    </metadata-records>
+  </connection>
+  <aliases enabled='yes' />
+  <column caption='Date Of Birth' datatype='integer' name='[DateOfBirth]' role='measure' type='quantitative' />
+  <column caption='First Name' datatype='string' name='[FirstName]' role='dimension' type='nominal' />
+  <column caption='Last Name' datatype='string' name='[LastName]' role='dimension' type='nominal' />
+  <column datatype='integer' name='[StudentID (TEXT DB.txt1)]' role='dimension' type='ordinal' />
+  <column caption='Student ID' datatype='integer' name='[StudentID]' role='dimension' type='ordinal' />
+  <_.fcp.ObjectModelTableType.true...column caption='TEXT DB.txt' datatype='table' name='[__tableau_internal_object_id__].[TEXT DB.txt_DB08494E8BE24A3D9CF3E048477CC95A]' role='measure' type='quantitative' />
+  <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+  <semantic-values>
+    <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+  </semantic-values>
+  <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    <objects>
+      <object caption='TEXT DB.txt' id='TEXT DB.txt_DB08494E8BE24A3D9CF3E048477CC95A'>
+        <properties context=''>
+          <relation join='inner' type='join'>
+            <clause type='join'>
+              <expression op='='>
+                <expression op='[TEXT DB.txt].[DateOfBirth]' />
+                <expression op='[TEXT DB.txt1].[DateOfBirth]' />
+              </expression>
+            </clause>
+            <relation connection='textscan.0ey2ryy0om8iuh1e9sya81azj2o7' name='TEXT DB.txt' table='[D:\TestFiles\Tableau Files\Tableau Files Created by Sagar\DB Files\New folder\TEXT DB#txt]' type='table'>
+              <columns character-set='UTF-8' gridOrigin='A1:F7:no:A1:F7:1' header='yes' locale='en_US' separator=','>
+                <column datatype='integer' name='StudentID' ordinal='0' />
+                <column datatype='string' name='FirstName' ordinal='1' />
+                <column datatype='string' name='LastName' ordinal='2' />
+                <column datatype='integer' name='DateOfBirth' ordinal='3' />
+                <column datatype='string' name='Gender' ordinal='4' />
+                <column datatype='integer' name='Total Marks' ordinal='5' />
+              </columns>
+            </relation>
+            <relation connection='textscan.0ey2ryy0om8iuh1e9sya81azj2o7' name='TEXT DB.txt1' table='[TEXT DB#txt]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                <column datatype='integer' name='StudentID' ordinal='0' />
+                <column datatype='string' name='FirstName' ordinal='1' />
+                <column datatype='string' name='LastName' ordinal='2' />
+                <column datatype='integer' name='DateOfBirth' ordinal='3' />
+                <column datatype='string' name='Gender' ordinal='4' />
+                <column datatype='integer' name='Total Marks' ordinal='5' />
+              </columns>
+            </relation>
+          </relation>
+        </properties>
+      </object>
+    </objects>
+  </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+</datasource>
